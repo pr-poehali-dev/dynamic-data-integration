@@ -1,36 +1,36 @@
 import { Facebook, Instagram, Twitter, Github, Mail, MapPin, Phone } from "lucide-react"
 
 const data = {
-  facebookLink: "https://facebook.com/digitalhub",
-  instaLink: "https://instagram.com/digitalhub",
-  twitterLink: "https://twitter.com/digitalhub",
-  githubLink: "https://github.com/digitalhub",
+  facebookLink: "https://facebook.com/marketpro",
+  instaLink: "https://instagram.com/marketpro",
+  twitterLink: "https://t.me/marketpro",
+  githubLink: "https://vk.com/marketpro",
   services: {
-    web: "/web-razrabotka",
-    mobile: "/mobilnye-prilozheniya",
-    design: "/ui-ux-dizajn",
-    marketing: "/digital-marketing",
+    web: "/prodvizhenie-wb",
+    mobile: "/prodvizhenie-ozon",
+    design: "/prodvizhenie-ym",
+    marketing: "/optimizaciya-kartochek",
   },
   about: {
     story: "/o-nas",
     team: "/komanda",
-    portfolio: "/portfolio",
+    portfolio: "/kejsy",
     careers: "/vakansii",
   },
   help: {
     faqs: "/faq",
-    support: "/podderzhka",
+    support: "/konsultaciya",
     blog: "/blog",
   },
   contact: {
-    email: "hello@digitalhub.ru",
-    phone: "+7 (495) 123-45-67",
+    email: "info@marketpro.ru",
+    phone: "+7 (800) 000-00-00",
     address: "Москва, Россия",
   },
   company: {
-    name: "ДиджиталХаб",
+    name: "МаркетПро",
     description:
-      "Создаём цифровые продукты, которые помогают бизнесу расти. Веб-разработка, мобильные приложения и дизайн под ключ.",
+      "Помогаем продавцам расти на Wildberries, Ozon и Яндекс Маркет. Обучение, продвижение карточек и стратегия продаж — под ключ.",
   },
 }
 
@@ -49,15 +49,15 @@ const aboutLinks = [
 ]
 
 const serviceLinks = [
-  { text: "Веб-разработка", href: data.services.web },
-  { text: "Мобильные приложения", href: data.services.mobile },
-  { text: "UI/UX Дизайн", href: data.services.design },
-  { text: "Digital-маркетинг", href: data.services.marketing },
+  { text: "Продвижение на WB", href: data.services.web },
+  { text: "Продвижение на Ozon", href: data.services.mobile },
+  { text: "Яндекс Маркет", href: data.services.design },
+  { text: "Оптимизация карточек", href: data.services.marketing },
 ]
 
 const helpfulLinks = [
   { text: "FAQ", href: data.help.faqs },
-  { text: "Поддержка", href: data.help.support },
+  { text: "Бесплатная консультация", href: data.help.support },
   { text: "Блог", href: data.help.blog, hasIndicator: true },
 ]
 
@@ -396,7 +396,7 @@ export default function Footer() {
           <div className="footer-grid">
             <div className="footer-brand">
               <div className="brand-logo">
-                <div className="brand-icon">DH</div>
+                <div className="brand-icon">МП</div>
                 <span className="brand-name">{data.company.name}</span>
               </div>
               <p className="brand-description">{data.company.description}</p>

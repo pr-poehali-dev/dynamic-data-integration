@@ -6,7 +6,7 @@ const PhotographyBanner: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
 
-  const texts = ["БИЗНЕС.", "БРЕНДЫ."]
+  const texts = ["ПРОДАЖИ.", "МАРКЕТПЛЕЙС."]
 
   useEffect(() => {
     const typeSpeed = isDeleting ? 40 : 100
@@ -828,7 +828,7 @@ const PhotographyBanner: React.FC = () => {
             <div className="left-part">
               <h1>
                 <span className="d-flex">
-                  {["С", "О", "З", "Д", "А", "Ё", "М"].map((char, index) => (
+                  {["Р", "А", "С", "Т", "И", "М"].map((char, index) => (
                     <span key={index} className="char tracking-tighter" style={{ animationDelay: `${index * 0.08}s` }}>
                       {char === " " ? "\u00A0" : char}
                     </span>
@@ -837,10 +837,10 @@ const PhotographyBanner: React.FC = () => {
                 <span className="text tracking-tighter">{currentText}</span>
               </h1>
               <p className="tracking-widest">
-                Помогаем предпринимателям запускать цифровые продукты быстрее с помощью современных технологий
+                Продвигаем товары на Wildberries, Ozon и Яндекс Маркет. Оптимизация карточек, реклама и стратегия роста — под ключ
               </p>
               <a href="#cta" className="book-link">
-                <span className="linktext tracking-tighter text-3xl">Начать проект</span>
+                <span className="linktext tracking-tighter text-3xl">Бесплатная консультация</span>
                 <span className="arrow">
                   <span></span>
                 </span>
@@ -894,36 +894,36 @@ const PhotographyBanner: React.FC = () => {
                 <li className="feature-item">
                   <div className="feature-icon">01</div>
                   <div className="feature-text">
-                    <h3>Опытная команда</h3>
+                    <h3>Wildberries, Ozon, Яндекс Маркет</h3>
                     <p className="font-light tracking-wider">
-                      Более 10 лет опыта в разработке цифровых продуктов для бизнеса любого масштаба
+                      Работаем со всеми крупными маркетплейсами России — знаем алгоритмы каждого изнутри
                     </p>
                   </div>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon">02</div>
                   <div className="feature-text">
-                    <h3>Современные технологии</h3>
+                    <h3>Продвижение карточек товара</h3>
                     <p className="tracking-wider">
-                      Используем передовые инструменты и фреймворки для создания быстрых и надёжных решений
+                      SEO-оптимизация, фото, инфографика и реклама — ваш товар увидят тысячи покупателей
                     </p>
                   </div>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon">03</div>
                   <div className="feature-text">
-                    <h3>Индивидуальный подход</h3>
+                    <h3>Обучение с нуля до результата</h3>
                     <p className="tracking-wider">
-                      Каждый проект уникален — мы адаптируем решения под ваши конкретные задачи и цели
+                      Практические курсы и наставничество: от регистрации до первых продаж и масштабирования
                     </p>
                   </div>
                 </li>
                 <li className="feature-item">
                   <div className="feature-icon">04</div>
                   <div className="feature-text">
-                    <h3>Поддержка 24/7</h3>
+                    <h3>Бесплатная консультация</h3>
                     <p className="tracking-wider">
-                      Обеспечиваем техническую поддержку и сопровождение на всех этапах работы
+                      Разберём вашу нишу, конкурентов и стратегию роста — без обязательств и скрытых условий
                     </p>
                   </div>
                 </li>
@@ -937,73 +937,73 @@ const PhotographyBanner: React.FC = () => {
               <div className="testimonials-marquee">
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "Команда полностью изменила наш подход к цифровому присутствию. Результаты превзошли все ожидания."
+                    "За 2 месяца работы с командой оборот на Wildberries вырос в 3 раза. Карточки наконец начали продавать сами!"
                   </p>
                   <div className="testimonial-author">
                     <div className="author-avatar">АС</div>
                     <div className="author-info">
-                      <h4>Алексей Смирнов</h4>
-                      <p>Директор по развитию</p>
+                      <h4>Алексей Соколов</h4>
+                      <p>Продавец одежды, WB</p>
                     </div>
                   </div>
                 </div>
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "Профессиональный подход и внимание к деталям. Запустили проект в рекордные сроки без потери качества."
+                    "Прошла обучение с нуля — через 3 месяца открыла свой магазин на Ozon. Уже окупила вложения!"
                   </p>
                   <div className="testimonial-author">
-                    <div className="author-avatar">МК</div>
+                    <div className="author-avatar">МП</div>
                     <div className="author-info">
-                      <h4>Мария Козлова</h4>
-                      <p>Основатель стартапа</p>
+                      <h4>Мария Петрова</h4>
+                      <p>Начинающий селлер, Ozon</p>
                     </div>
                   </div>
                 </div>
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "От идеи до запуска — всё прошло гладко. Рекомендую всем, кто ценит качество и скорость."
+                    "Бесплатная консультация реально открыла глаза на ошибки в карточках. После правок продажи выросли на 60%."
                   </p>
                   <div className="testimonial-author">
-                    <div className="author-avatar">ДВ</div>
+                    <div className="author-avatar">ДН</div>
                     <div className="author-info">
-                      <h4>Дмитрий Волков</h4>
-                      <p>Предприниматель</p>
+                      <h4>Дмитрий Нечаев</h4>
+                      <p>Продавец электроники, ЯМ</p>
                     </div>
                   </div>
                 </div>
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "Команда полностью изменила наш подход к цифровому присутствию. Результаты превзошли все ожидания."
+                    "За 2 месяца работы с командой оборот на Wildberries вырос в 3 раза. Карточки наконец начали продавать сами!"
                   </p>
                   <div className="testimonial-author">
                     <div className="author-avatar">АС</div>
                     <div className="author-info">
-                      <h4>Алексей Смирнов</h4>
-                      <p>Директор по развитию</p>
+                      <h4>Алексей Соколов</h4>
+                      <p>Продавец одежды, WB</p>
                     </div>
                   </div>
                 </div>
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "Профессиональный подход и внимание к деталям. Запустили проект в рекордные сроки без потери качества."
+                    "Прошла обучение с нуля — через 3 месяца открыла свой магазин на Ozon. Уже окупила вложения!"
                   </p>
                   <div className="testimonial-author">
-                    <div className="author-avatar">МК</div>
+                    <div className="author-avatar">МП</div>
                     <div className="author-info">
-                      <h4>Мария Козлова</h4>
-                      <p>Основатель стартапа</p>
+                      <h4>Мария Петрова</h4>
+                      <p>Начинающий селлер, Ozon</p>
                     </div>
                   </div>
                 </div>
                 <div className="testimonial-card">
                   <p className="testimonial-quote">
-                    "От идеи до запуска — всё прошло гладко. Рекомендую всем, кто ценит качество и скорость."
+                    "Бесплатная консультация реально открыла глаза на ошибки в карточках. После правок продажи выросли на 60%."
                   </p>
                   <div className="testimonial-author">
-                    <div className="author-avatar">ДВ</div>
+                    <div className="author-avatar">ДН</div>
                     <div className="author-info">
-                      <h4>Дмитрий Волков</h4>
-                      <p>Предприниматель</p>
+                      <h4>Дмитрий Нечаев</h4>
+                      <p>Продавец электроники, ЯМ</p>
                     </div>
                   </div>
                 </div>
@@ -1013,16 +1013,16 @@ const PhotographyBanner: React.FC = () => {
 
           <section className="cta-section" id="cta">
             <div className="cta-container">
-              <h2 className="cta-title text-center">Готовы начать?</h2>
+              <h2 className="cta-title text-center">Начни расти!</h2>
               <p className="cta-subtitle">
-                Присоединяйтесь к сотням компаний, которые уже трансформировали свой бизнес. Ваш путь к успеху начинается здесь.
+                Запишись на бесплатную консультацию — разберём твою нишу, карточки и стратегию продвижения на маркетплейсах.
               </p>
               <div className="cta-buttons">
                 <a href="#" className="cta-button">
-                  Обсудить проект
+                  Получить консультацию
                 </a>
                 <a href="#" className="cta-button secondary">
-                  Посмотреть кейсы
+                  Наши услуги
                 </a>
               </div>
             </div>
